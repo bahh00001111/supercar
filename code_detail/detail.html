@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="detail"></div>
+
+<script>
+
+const cars = [
+
+    {
+        id:1,
+        name:"BMW M4",
+        price:"$80,000",
+        year:"2024",
+        engine:"510 HP",
+        img:"bmw.jpg"
+    },
+
+    {
+        id:2,
+        name:"Mercedes AMG",
+        price:"$95,000",
+        year:"2023",
+        engine:"577 HP",
+        img:"benz.jpg"
+    }
+
+];
+
+const params = new URLSearchParams(window.location.search);
+
+const id = Number(params.get("id"));
+
+const product = cars.find(car => car.id === id);
+
+if(product){
+
+    document.getElementById("detail").innerHTML = `
+
+        <div class="card">
+
+            <img src="${product.img}" width="300">
+
+            <h1>${product.name}</h1>
+
+            <p>Price : ${product.price}</p>
+
+            <p>Year : ${product.year}</p>
+
+            <p>Engine : ${product.engine}</p>
+
+            <button>
+                Confirm Purchase
+            </button>
+
+        </div>
+
+    `;
+
+}else{
+
+    document.getElementById("detail").innerHTML="<h1>Product Not Found</h1>";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperCar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand fw-bold text-info">
+          <img
+            src="./icon.png"
+            alt="Sell Super Car Logo"
+            width="80"
+            height="70"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#data"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-lg-end fs-5"
+          id="data"
+        >
+          <!-- menu -->
+
+          <ul class="navbar-nav align-items-lg-center gap-3 me-lg-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Luxury Cars</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Super Cars</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle text-white"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Contact
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    href="https://www.facebook.com/share/15wKikFSqYU/?mibextid=wwXIfr"
+                    class="dropdown-item"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/lokiee_6?igsh=MWVzM3pydGNleW94OA==&utm_source=ig_contact_invite"
+                    class="dropdown-item"
+                    >Instagram</a
+                  >
+                </li>
+                <li><a href="@nak743414" class="dropdown-item">Telegram</a></li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/share/15wKikFSqYU/?mibextid=wwXIfr"
+                    class="dropdown-item"
+                    >Whatapp</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-dark text-white border-info">
+                <i class="bi bi-search"></i>
+              </span>
+
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+
+              <button
+                class="btn btn-outline-info rounded-3 me-2 search"
+                type="submit"
+              >
+                Search
+              </button>
+              <a href="#" class="btn btn-danger fw-bold rounded-5 logout-btn">
+                Log out
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- slide carousel -->
+
+    <div
+      id="mainCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./new1.png" alt="Car 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="./new2.png" alt="Car 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="./new3.png" alt="Car 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="./new4.png" alt="Car 4" />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- create card -->
+
+    <div class="container-fluid bg-black py-5">
+      <div class="scroll-card">
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+          <!-- Product Image -->
+          <img
+            src="https://t4.ftcdn.net/jpg/03/50/11/79/360_F_350117912_FLYQkeDzhwB55wMSRb8nPMWzIZuvtJhz.jpg"
+            class="card-img-top p-3"
+            alt="Anime Character"
+          />
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Lamborghini Aventador</h5>
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through"
+                >$450 000</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$337,500</span>
+            </p>
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+            <a
+              href="card-detail.html?id=1"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+          <!-- Product Image -->
+          <img
+            src="./image-car/image1.jpg"
+            class="card-img-top p-3"
+            alt="Anime Character"
+          />
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Lamborghini Huracán EVO</h5>
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through"
+                >$261 000</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$195,750</span>
+            </p>
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+            <a
+              href="card-detail.html?id=2"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+          <!-- Product Image -->
+          <img
+            src="./image-car/image2.jpg"
+            class="card-img-top p-3"
+            alt="Anime Character"
+          />
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Lamborghini Huracán EVO</h5>
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through"
+                >$470 0000</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$352,5000</span>
+            </p>
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+            <a
+              href="card-detail.html?id=3"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image3.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Hennessey Venom F5</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through"
+                >$2,100,000</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$1,575,000</span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=4"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image4.webp"
+            class="card-img-top p-3"
+            alt="Rimac Nevera"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Rimac Nevera</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through"
+                >$2,200,000</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$1,650,000</span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=5"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image6.jpg"
+            class="card-img-top p-3"
+            alt="McLaren 720S"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">McLaren 720S</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $310,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $232,500 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=6"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image7.jpg"
+            class="card-img-top p-3"
+            alt="Koenigsegg Jesko"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Koenigsegg Jesko</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $3,000,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $2,250,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=7"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image8.jpg"
+            class="card-img-top p-3"
+            alt="Koenigsegg Jesko Absolut"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Koenigsegg Jesko Absolut</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $3,400,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $2,550,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=8"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-card">
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image9.jpg"
+            class="card-img-top p-3"
+            alt="McLaren Artura"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">McLaren Artura</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $254,100
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $190,575 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=9"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image10.jpg"
+            class="card-img-top p-3"
+            alt="McLaren Artura Special Edition"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">McLaren Artura Special Edition</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $275,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $206,250 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=10"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image11.jpg"
+            class="card-img-top p-3"
+            alt="Alpine Alpenglow Concept"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Alpine Alpenglow Concept</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $1,200,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $900,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=11"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image12.jpg"
+            class="card-img-top p-3"
+            alt="Praga Bohema"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Praga Bohema</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $1,300,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $975,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=12"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image13.jpg"
+            class="card-img-top p-3"
+            alt="Ferrari F80"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Ferrari F80</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $3,900,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $2,925,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=13"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image14.jpeg"
+            class="card-img-top p-3"
+            alt="Ferrari F80"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Ferrari F80</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $4,100,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $3,075,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=14"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image15.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5 Stealth Series"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">
+              Hennessey Venom F5 Stealth Series
+            </h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,500,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $1,875,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=15"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image16.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Hennessey Venom F5</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,100,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $1,575,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=16"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-card">
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image17.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Hennessey Venom F5</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,100,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $1,575,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=17"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image18.avif"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5 Special Edition"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">
+              Hennessey Venom F5 Special 
+            </h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,800,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $2,100,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=18"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image19.jpg"
+            class="card-img-top p-3"
+            alt="Luxury Sports Car"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Luxury Sports Car</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $850,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $637,500 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=19"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image20.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Hennessey Venom F5</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,200,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $1,650,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=20"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image21.jpg"
+            class="card-img-top p-3"
+            alt="Praga Bohema"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Praga Bohema</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $1,300,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $975,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=21"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image22.jpg"
+            class="card-img-top p-3"
+            alt="Hennessey Venom F5 Revolution"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Hennessey Venom F5 Revolution</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,700,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $2,025,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=22"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image23.jpg"
+            class="card-img-top p-3"
+            alt="Bugatti Chiron Super Sport"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Bugatti Chiron Super Sport</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $4,000,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $3,000,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=23"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="card h-100 border-0 shadow-lg product-card">
+          <!-- Discount Badge -->
+          <span
+            class="badge bg-danger position-absolute top-0 end-0 m-2 px-3 py-2"
+          >
+            25% OFF
+          </span>
+
+          <!-- Product Image -->
+          <img
+            src="./image-car/image24.jpg"
+            class="card-img-top p-3"
+            alt="Koenigsegg Gemera"
+          />
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Koenigsegg Gemera</h5>
+
+            <p class="mb-2">
+              <span class="text-white text-decoration-line-through">
+                $2,300,000
+              </span>
+              <span class="text-danger fw-bold fs-4 ms-2"> $1,725,000 </span>
+            </p>
+
+            <p class="text-secondary small">
+              High Quality Anime Figure with Premium Design.
+            </p>
+
+            <a
+              href="card-detail.html?id=24"
+              class="btn btn-primary rotate-btn w-100 fw-bold"
+            >
+              🛒 Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company -->
+          <div class="col-lg-4 col-md-6">
+            <h2 class="fw-bold text-warning">
+              <i class="bi bi-car-front-fill"></i>
+              SuperCar
+            </h2>
+
+            <p class="text-secondary mt-3">
+              Discover the world's most luxurious supercars. We provide premium
+              performance vehicles with exceptional quality and unforgettable
+              driving experiences.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+
+              <li><a href="#">Cars</a></li>
+
+              <li><a href="#">Brands</a></li>
+
+              <li><a href="#">About</a></li>
+
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Brands -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Popular Brands</h5>
+
+            <ul class="list-unstyled">
+              <li>Ferrari</li>
+
+              <li>Lamborghini</li>
+
+              <li>Bugatti</li>
+
+              <li>McLaren</li>
+
+              <li>Rolls Royce</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-warning"></i>
+              Phnom Penh, Cambodia
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill text-warning"></i>
+              info@supercar.com
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill text-warning"></i>
+              +855 12 345 678
+            </p>
+
+            <div class="social mt-4">
+              <a href="https://www.facebook.com/share/15wKikFSqYU/?mibextid=wwXIfr">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href=" https://www.instagram.com/lokiee_6?igsh=MWVzM3pydGNleW94OA==&utm_source=ig_contact_invite">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="https://www.facebook.com/share/15wKikFSqYU/?mibextid=wwXIfr">
+                <i class="bi bi-youtube"></i>
+              </a>
+
+              <a href=" https://www.instagram.com/lokiee_6?igsh=MWVzM3pydGNleW94OA==&utm_source=ig_contact_invite">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-secondary">
+          © 2026 SuperCar. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
